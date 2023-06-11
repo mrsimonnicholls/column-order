@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin:0;
+}
+
+/* LAYOUT */
+
+main {
+    margin:0 auto;
+    max-width: 1000px;
+    padding:1rem;
+}
+
+section {
+    margin-block:6rem;
+}
+
+.two-column {
+    display: grid;
+    gap:1rem;
+}
+
+.two-column>h2 {
+    /* span all */
+    grid-column: 1/-1;
+}
+
+.two-column img {
+    width:100%;
+}
+
+
+
+@media (width >= 510px) {
+
+    .two-column {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .first-item {
+        order:1;
+    }
+    .second-item {
+        order:2;
+    }
+
+}
