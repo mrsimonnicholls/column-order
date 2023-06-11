@@ -1,4 +1,4 @@
-#Ordering columns in a two-column grid
+# Ordering columns in a two-column grid
 
 Use the css property **order** to change the order of grid items within your grid container.
 
